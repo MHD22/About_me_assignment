@@ -3,12 +3,14 @@ body{
     padding-left: 5px;
     padding-right: 5px;
     background-color:#eeeeee;
+    height: 100vh;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 h1{
     background-color:#949699;
@@ -28,33 +30,65 @@ h3{
     box-shadow: 2px 2px 2px 5px rgba(78, 67, 67, 0.699); 
     border-radius: 15px;
 }
+
 h6{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     background-color: rgb(163, 69, 69);
     border: 2px solid black;
     padding:10px;
-    margin: 10px;
-    box-shadow: 2px 2px 2px 5px rgba(161, 78, 78, 0.699); 
+    margin: 40px 10px 0 10px;
+    box-shadow: 2px 2px 2px 5px rgba(78, 67, 67, 0.699);
     border-radius: 15px;
 }
-p{
-    font-size: 2em;
+.last{
+    width: 80%;
+    filter: opacity(90%);
+}
+
+ul{
+    margin:10px;
     width: 70%;
+    font-size: 1.5em;
+    list-style: outside;
     text-align: center;
     background-color: rgba(109, 110, 107, 0.664);
     box-shadow: 0 1px 2px 4px rgb(48, 46, 46);
-    padding : 7px 2px;
-    margin: 5px;
+    padding : 15px 25px;
+    padding-left: 35px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+ul li, ol li{
+    border-bottom: 3px solid rgba(83, 83, 82, 0.705);
+    margin:10px;
+    padding-bottom:10px;
+
+}
+ol{
+    margin:20px;
+    width: 25%;
+    font-size: 1.5em;
+    list-style: decimal;
+    text-align: center;
+    background-color: rgba(109, 110, 107, 0.664);
+    box-shadow: 0 1px 2px 4px rgb(48, 46, 46);
+    padding : 15px 25px;
+    padding-left: 35px;
     border: 1px solid black;
     border-radius: 15px;
 }
 footer{
     display: flex;
     justify-content: center;
+    align-items: center;
+    color:rgba(241, 241, 235, 0.801);
     position: fixed;
     width: 100%;
+    height: 50px;
     bottom:0;
-    font-size: .7em;
+    font-size: 1em;
+    box-shadow: 0 -3px 2px 2px rgb(128, 126, 126);
     background-color:#404040;
+    margin-top: 100px;
 }
