@@ -3,23 +3,29 @@ var score=0;
 var uName = prompt('what\'s your name?');
 alert(`welcome ${uName} to my web site..`);
 alert('please, answer the next questions by yes/no or y/n');
-var answer1 = prompt('Is  Mercedes my favorite car company?').toLowerCase();
 
+function carQuestion (){
 
-//first question about favorite car
-if (answer1 === 'y' || answer1 === 'yes') {
-  //console.log('your answer is wrong');
-  alert('your answer is wrong');
+  var answer1 = prompt('Is  Mercedes my favorite car company?').toLowerCase();
+
+  //first question about favorite car
+  if (answer1 === 'y' || answer1 === 'yes') {
+    //console.log('your answer is wrong');
+    alert('your answer is wrong');
+  }
+  else if (answer1 === 'no' || answer1 === 'n') {
+    //console.log('your answer is True');
+    alert('your answer is True');
+    score++;
+  }
+  else {
+    //console.log(`you should answer yes/y or no/n, please.`);
+    alert('you should answer yes/y or no/n, please.');
+  }
+
 }
-else if (answer1 === 'no' || answer1 === 'n') {
-  //console.log('your answer is True');
-  alert('your answer is True');
-  score++;
-}
-else {
-  //console.log(`you should answer yes/y or no/n, please.`);
-  alert('you should answer yes/y or no/n, please.');
-}
+
+carQuestion ( );
 
 
 //second question about fav color
