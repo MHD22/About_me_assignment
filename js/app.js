@@ -6,27 +6,22 @@ alert('please, answer the next questions by yes/no or y/n');
 
 var answer1 = '';
 
+//first question about favorite car
 function carQuestion (){
 
   answer1 = prompt('Is  Mercedes my favorite car company?').toLowerCase();
-
-  //first question about favorite car
   if (answer1 === 'y' || answer1 === 'yes') {
-    //console.log('your answer is wrong');
     alert('your answer is wrong');
   }
   else if (answer1 === 'no' || answer1 === 'n') {
-    //console.log('your answer is True');
     alert('your answer is True');
     score++;
   }
   else {
-    //console.log(`you should answer yes/y or no/n, please.`);
     alert('you should answer yes/y or no/n, please.');
   }
 
 }
-
 carQuestion ( );
 
 
@@ -35,35 +30,29 @@ answer1 = prompt('Is blue my favorite color?').toLowerCase();
 
 function colorQuestion (answer1){
   if (answer1 === 'y' || answer1 === 'yes') {
-    //console.log('your answer is wrong');
     alert('your answer is wrong');
   }
   else if (answer1 === 'no' || answer1 === 'n') {
-    //console.log('your answer is True');
     alert('your answer is True');
     score++;
   }
   else {
-    //console.log(`you should answer yes/y or no/n, please.`);
     alert('you should answer yes/y or no/n, please.');
   }
 }
 colorQuestion (answer1);
 
+//third question about studying
 function uniQuestion (){
-  //third question about studying
   answer1 = prompt('Am I studying at Zarqa University?').toLowerCase();
   if (answer1 === 'y' || answer1 === 'yes') {
-    //console.log('your answer is True');
     alert('your answer is True');
     score++;
   }
   else if (answer1 === 'no' || answer1 === 'n') {
-    //console.log('your answer is Wrong');
     alert('your answer is Wrong');
   }
   else {
-    //console.log(`you should answer yes/y or no/n, please.`);
     alert('you should answer yes/y or no/n, please.');
   }
 
@@ -74,50 +63,42 @@ uniQuestion ();
 answer1 = prompt('Do I like the summer?').toLowerCase();
 function summerQuestion ( answer1) {
   if (answer1 === 'y' || answer1 === 'yes') {
-    //console.log('your answer is Wrong');
     alert('your answer is Wrong');
   }
   else if (answer1 === 'no' || answer1 === 'n') {
-    //console.log('your answer is True');
     alert('your answer is True');
     score++;
   }
   else {
-    //console.log(`you should answer yes/y or no/n, please.`);
     alert('you should answer yes/y or no/n, please.');
   }
 }
 summerQuestion (answer1);
 
 
+//fifth question about coding
 function codingQuestion (){
-  //fifth question about coding
   answer1 = prompt('Do I love coding').toLowerCase();
   if (answer1 === 'y' || answer1 === 'yes') {
-    //console.log('your answer is True');
     alert('your answer is True');
     score++;
   }
   else if (answer1 === 'no' || answer1 === 'n') {
-    // console.log('your answer is Wrong');
     alert('your answer is Wrong');
-
   }
   else {
-    //console.log(`you should answer yes/y or no/n, please.`);
     alert('you should answer yes/y or no/n, please.');
   }
 }
 codingQuestion ();
 
 
+//6th question about guessing a number: 4 attempt to user.
 function guessNumber (){
-  //6th question about guessing a number: 4 attempt to user.
   alert('let\'s play another game, guessing a number game, Good luck');
   let number =22;
   for(let i=0; i<4 ; i++){
     var answer = Number(prompt(`guess anumber between 0 and 50, you have ${4-i} attempts: `));
-    //console.log(answer);
     if(!answer){ // for check taht the user enter a number.
       alert('you should enter a number please.');
       i--; // for keep the number of real attempts is four.
@@ -154,14 +135,13 @@ function guessNumber (){
 }
 guessNumber ();
 
+//7th question about choose a color from array:
 function guessColor (){
-  //7th question about choose a color from array:
   const colorArr=['red','green','blue','yellow','gray','white','brown','skyBlue','black','orange','purple','pink','maroon','gold','bronze','silver'];
   alert('One last game, you have 6 attempts to choose the correct favorite color from list of colors');
 
   for(let i=0 ; i < 6 ; i++ ){
     var answer = prompt(`you have ${6-i} attempts: \n select a color from the list.\n which one is my favorite color?\n ${colorArr.join(' - ')}`).toLowerCase();
-    //console.log(answer);
     if(answer=== colorArr[5]){
       alert('great, it\'s true, you won');
       score++;
